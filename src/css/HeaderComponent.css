@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+/*---------Color palette----------*/
+/*--------Main font-------*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 0 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0 32px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 0 16px;
+  }
+}
+@media screen and (max-width: 355px) {
+  .header {
+    padding: 0 0px;
+  }
+}
+.header__home {
+  display: flex;
+  align-content: center;
+}
+.header__home > img {
+  height: 26px;
+  align-self: center;
+}
+
+.header__buttons {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.button {
+  width: 100px;
+  height: 34px;
+  font-size: 16px;
+  background-color: #F4E041;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #FFE302;
+}
+.button:disabled {
+  background-color: #B4B4B4;
+}
